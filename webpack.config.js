@@ -9,6 +9,7 @@ module.exports = {
   resolve: {
     fallback: {
       http: require.resolve('stream-http'),
+      fs: false,  // Desactivar 'fs' como fallback
     },
   },
   module: {

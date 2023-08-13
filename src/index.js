@@ -2,6 +2,9 @@ const express = require("express");
 const router = express.Router();
 const cors = require("cors");
 const nodemailer = require("nodemailer");
+const crypto = require('crypto');
+global.crypto = crypto;
+
 
 // server used to send send emails
 const app = express();
